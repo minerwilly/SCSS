@@ -1,0 +1,88 @@
+.navbar {
+  border: 1px solid $border-color;
+  border-right: 0;
+  border-left: 0;
+  width: 100%;
+  height: auto;
+  nav {
+    margin: 0 auto;
+    width: 994px;
+    ul {
+      li {
+        display: inline-block;
+        position: relative;
+        float: left;
+
+        a {
+          display: block;
+          float: left;
+          width: auto;
+          height: 35px;
+          background: $manu-header-back;
+          line-height: 35px;
+          border-left: 1px solid $border-color;
+          padding: 0 32px;
+
+          font-size: 1em;
+          // font-family: 'AlteHaasGrotesk';
+          text-decoration: none;
+          color: $menu-color;
+          text-transform: uppercase;
+
+          &:hover {
+            background: $hover-menu;
+          }
+        }
+
+
+        &:last-child {
+          a {
+            border-right: 1px solid $border-color;
+          }
+        }
+        .subnav {
+          display: none;
+          position: absolute;
+          width: 152px;
+          height: auto;
+          top: 35px;
+          left: 0;
+
+          li {
+            width: 100%;
+            height: auto;
+
+
+            a {
+              width: 100%;
+              height: 32px;
+              background: $manu-header-back;
+              border-right: 1px solid $border-color;
+              border-bottom: 1px solid $border-color;
+              padding: 0;
+              text-align: center;
+
+
+
+              &:hover {
+                background: $hover-menu;
+              }
+
+            }
+            &:first-child {
+              border-top: 1px solid $border-color;
+
+            }
+          }
+        }
+        &:hover {
+          .subnav {
+            display: block;
+          }
+        }
+
+
+      }
+    }
+  }
+}

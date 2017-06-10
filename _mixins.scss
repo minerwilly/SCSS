@@ -1,0 +1,21 @@
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}
+
+// @mixin clearfix {
+//   &:after {
+//     content: "";
+//     display: table;
+//     clear: both;
+//   }
+// }
+
+// .appearance (@value: none) {
+//     -webkit-appearance:     @value;
+//     -moz-appearance:        @value;
+//     -ms-appearance:         @value;
+//     -o-appearance:          @value;
+//     appearance:             @value;
+// }

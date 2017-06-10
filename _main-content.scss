@@ -1,0 +1,481 @@
+main.main-content {
+  float: left;
+  width: 100%;
+  height: auto;
+
+  >div {
+    width: 994px;
+    margin: 0 auto;
+  }
+  section {
+    article {
+      width: 954px;
+      height: auto;
+      float: left;
+      background: $top-head-color;
+      border: 1px solid $border-color;
+      padding: 20px;
+      margin-bottom: 15px;
+
+      div {
+        float: left;
+      }
+
+      div.img_container {
+        // display: inline-block;
+        position: relative;
+        width: 205px;
+        // height: 197px;
+        height: 200px;
+        // vertical-align: middle;
+        // background: red;
+
+        img {
+          position: absolute;
+          width: 100%;
+          height: auto;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          // vertical-align: middle;
+        }
+      }
+
+      div.product-info {
+        // width: 408px;
+        width: 390px;
+        padding-left: 25px;
+        padding-right: 25px;
+
+        h4 {
+          border-bottom: 1px dotted $main-text-color;
+          padding-bottom: 15px;
+          line-height: 1.25em;
+          margin-bottom: 15px;
+
+        }
+        p {
+          font-size: 0.938em;
+          color: $main-text-color;
+          // line-height: 1.188em;
+          line-height: 1.35em;
+        }
+      }
+
+      div.price-add {
+        width: 300px;
+        float: right;
+        height: 100%;
+        min-height: 200px;
+        position: relative;
+
+        div {
+          float: right;
+
+          div {
+            float: right;
+          }
+
+          div.price {
+            clear: right;
+            font-size: 2em;
+            color: $link-color;
+            font-family: 'AlteHaasGrotesk_Bold';
+            margin-top: 15px;
+          }
+
+          div.quanty-add {
+            // float: right;
+            clear: right;
+            width: 300px;
+            font-size: 1.35em;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            p {
+              float: left;
+              line-height: 32px;
+              margin-right: 15px;
+            }
+
+            span {
+              float: left;
+              display: block;
+              width: 65px;
+              margin-right: 15px;
+
+            }
+
+            button {
+              float: left;
+              @include rounded-corners(8px);
+              width: 164px;
+              height: 42px;
+              outline: none;
+              padding: 0;
+              text-decoration: none;
+              border: none;
+
+              border: 2px solid $link-color;
+              color: $top-head-color;
+              font-family: 'AlteHaasGrotesk_Bold';
+              font-size: 1.188em;
+              margin-top: -4px;
+              &:hover {
+                cursor: pointer;
+              }
+
+
+
+            }
+          }
+        }
+      }
+    }
+  }
+
+  section.total {
+    float: left;
+    width: 100%;
+    height: auto;
+    article {
+      div {
+        float: left;
+        width: 100%;
+        margin-bottom: 10px;
+        p {
+          float: left;
+        }
+        span {
+          float: right;
+        }
+      }
+      div.total-price {
+        margin-bottom: 0;
+      }
+    }
+  }
+
+  section.form-container {
+    width: 100%;
+    height: auto;
+
+    form {
+      float: left;
+      width: 100%;
+      height: auto;
+      margin-top: 35px;
+      label {
+        width: 185px;
+        float: left;
+        clear: left;
+        text-align: right;
+        margin-right: 10px;
+        margin-bottom: 5px;
+        height: 32px;
+        line-height: 32px;
+
+      }
+      label.marketing-label {
+        clear: none;
+        text-align: left;
+        padding-left: 20px;
+        width: 400px;
+      }
+
+      .marketing-check {
+        margin-left: 50px;
+      }
+
+      input[type=text], input[type=number], input[type=email] {
+        width: 380px;
+        float: left;
+        margin-bottom: 5px;
+
+        @include rounded-corners(8px);
+        display: block;
+        outline: none;
+        box-shadow: none;
+        border: none;
+        border: 1px solid $input-border-color;
+        height: 32px;
+        padding-left: 20px;
+        // font-size: 1.35em;
+        font-size: 1em;
+      }
+      input[type=checkbox] {
+        float: left;
+        clear: left;
+        margin-top: 10px;
+        background: $top-head-color;
+      }
+      .checkbot-content {
+        float: left;
+        clear: right;
+
+        label {
+          float: left;
+          width: 200px;
+          height: 30px;
+          clear: none;
+          text-align: left;
+          padding-left: 10px;
+        }
+      }
+
+    }
+
+  }
+
+  .total-text {
+    float: right;
+    clear: right;
+    text-align: right;
+    width: 400px;
+    margin-top: 20px;
+  }
+}
+
+section.order {
+  p {
+    float: left;
+  }
+  a {
+    float: left;
+  }
+  a.btn-shop {
+    color: $main-price-color;
+    margin-left: 35px;
+    text-decoration: none;
+  }
+  div.label-cont {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    ul {
+      li {
+        display: inline-block;
+        width: 125px;
+        text-align: center;
+      }
+
+      li:first-child {
+        width: 590px;
+        text-align: left;
+      }
+    }
+  }
+
+  div.total-amount {
+    float: right;
+    width: 400px;
+
+    a {
+      float: left;
+      width: 160px;
+      height: 38px;
+      border: 2px solid #dc5730;
+      @include rounded-corners(8px);
+      line-height: 38px;
+      color: $manu-header-back;
+      text-align: center;
+      text-decoration: none;
+      font-size: 1.125em;
+      font-family: 'AlteHaasGrotesk_Bold';
+    }
+
+    div {
+      float: right;
+      width: 165px;
+
+      a {
+        margin-top: 30px;
+
+      }
+      p {
+        float: right;
+        clear: right;
+        font-size: 1.4em;
+        margin-right: 10px;
+      }
+
+
+      span {
+        float: right;
+        clear: right;
+        font-size: 1.65em;
+        font-family: 'AlteHaasGrotesk_Bold';
+        color: $main-price-color;
+        margin-top: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+      }
+
+    }
+  }
+
+  .order-img-cont {
+    float: left;
+    width: 112px;
+    height: 108px;
+    position: relative;
+    margin-right: 20px;
+
+    img {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+    }
+  }
+
+  .order-cont {
+    width: 445px;
+  }
+
+  .price-unit {
+    float: left;
+    width: 125px;
+    text-align: center;
+    color: $main-text-color;
+    font-size: 1.125em;
+    font-family: 'AlteHaasGrotesk_Bold';
+  }
+
+  .quantity {
+    float: left;
+    width: 125px;
+    text-align: center;
+    color: $main-text-color;
+    input {
+      margin-left: 30px;
+    }
+    a {
+      margin-left: 34px;
+      margin-top: 5px;
+      text-decoration: none;
+      color: $main-text-color;
+
+    }
+  }
+
+  .total-price {
+    float: left;
+    width: 125px;
+    text-align: center;
+    color: $main-price-color;
+    font-size: 1.375em;
+    font-family: 'AlteHaasGrotesk_Bold';
+  }
+
+
+}
+input[type=number], input[type=search] {
+  @include rounded-corners(8px);
+  display: block;
+  // -webkit-appearance: none;
+  // box-shadow: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  border: 1px solid $input-border-color;
+  height: 32px;
+  width: 45px;
+  padding-left: 20px;
+  font-size: 1.35em;
+  margin-right: 18px;
+  // padding-right: 20px;
+}
+
+input[type=search] {
+  height: 28px;
+  line-height: 28px;
+  width: 200px;
+  float: right;
+  clear: both;
+  margin-right: 0;
+  margin-top: 5px;
+
+}
+
+input.form-button {
+  float: left;
+  clear: both;
+  margin-left: 50px;
+  @include rounded-corners(8px);
+  width: 164px;
+  height: 42px;
+  outline: none;
+  padding: 0;
+  text-decoration: none;
+  border: none;
+
+  border: 2px solid $link-color;
+  color: $top-head-color;
+  font-family: 'AlteHaasGrotesk_Bold';
+  font-size: 1.188em;
+  margin-top: -4px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-search {
+  background: none;
+  position: absolute;
+  border: none;
+  background: url(../img/content_img/ico-search.png) top left no-repeat;
+  text-indent: -9999px;
+  overflow: hidden;
+  z-index: 100;
+  width: 13px;
+  height: 14px;
+  top: 13px;
+  left: 8px;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.reg-price {
+    position: relative;
+    display: inline-block;
+}
+.reg-price::before, .reg-price::after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}
+.reg-price::before {
+    border-bottom: 2px solid $cross-color;
+    -webkit-transform: skewY(-10deg);
+    transform: skewY(-10deg);
+}
+// .reg-price::after {
+//     border-bottom: 2px solid blue;
+//     -webkit-transform: skewY(10deg);
+//     transform: skewY(10deg);
+// }
+
+.clear-f {
+  float: left;
+  clear: left;
+  margin-left: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main-button {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e9a83d+0,e17936+24,e17936+51,e17936+75,e9a83d+100 */
+    background: rgb(233,168,61); /* Old browsers */
+    background: -moz-linear-gradient(left, rgba(233,168,61,1) 0%, rgba(225,121,54,1) 24%, rgba(225,121,54,1) 51%, rgba(225,121,54,1) 75%, rgba(233,168,61,1) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, rgba(233,168,61,1) 0%,rgba(225,121,54,1) 24%,rgba(225,121,54,1) 51%,rgba(225,121,54,1) 75%,rgba(233,168,61,1) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, rgba(233,168,61,1) 0%,rgba(225,121,54,1) 24%,rgba(225,121,54,1) 51%,rgba(225,121,54,1) 75%,rgba(233,168,61,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e9a83d', endColorstr='#e9a83d',GradientType=1 ); /* IE6-9 */
+}

@@ -1,0 +1,25 @@
+// @include font-face(AlteHaasGrotesk, fonts/AlteHaasGrotesk);
+// @include font-face(AlteHaasGrotesk_Bold, fonts/AlteHaasGrotesk_Bold);
+
+
+@font-face {
+    font-family: 'AlteHaasGrotesk';
+    src: url('../fonts/AlteHaasGrotesk.eot');
+    src: url('../fonts/AlteHaasGrotesk.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AlteHaasGrotesk.woff') format('woff'),
+         url('../fonts/AlteHaasGrotesk.ttf') format('truetype'),
+         url('../fonts/AlteHaasGrotesk.svg#../fonts/AlteHaasGrotesk') format('svg');
+    font-weight: normal;
+    font-style: normal;
+};
+
+@font-face {
+    font-family: 'AlteHaasGrotesk_Bold';
+    src: url('../fonts/AlteHaasGrotesk_Bold.eot');
+    src: url('../fonts/AlteHaasGrotesk_Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/AlteHaasGrotesk_Bold.woff') format('woff'),
+         url('../fonts/AlteHaasGrotesk_Bold.ttf') format('truetype'),
+         url('../fonts/AlteHaasGrotesk_Bold.svg#../fonts/AlteHaasGrotesk_Bold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+};
